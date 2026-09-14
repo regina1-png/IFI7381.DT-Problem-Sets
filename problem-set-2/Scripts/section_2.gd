@@ -24,8 +24,6 @@ func heal(current_hp, amount, max_hp):
 
 #What keyword built into every Godot Node script runs once when the node enters the scene tree? Write a stub for it that prints a number of your choice.
 func _ready():
-    print(100)
-func _ready():
     print (heal(80, 15, 100))
 
 #How often does the _process() function run?
