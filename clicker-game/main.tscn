@@ -1,0 +1,52 @@
+[gd_scene format=3 uid="uid://c4vbvb4lni5r8"]
+
+[ext_resource type="Script" uid="uid://ckl1ixiy05q7t" path="res://game.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://b08l3ang485ja" path="res://door.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://oeswle6wwehh" path="res://magic-wand.png" id="3_1bvp3"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_57wj1"]
+font_size = 80
+
+[node name="game" type="Control" unique_id=1857477057]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_h2yge")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=587421838]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.9620001
+anchor_bottom = 2.809
+offset_left = 200.0
+offset_top = 50.0
+offset_right = 231.77588
+offset_bottom = 75.767944
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("1_ig7tw")
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=499104881]
+layout_mode = 0
+offset_left = 550.0
+offset_top = 350.0
+offset_right = 750.0
+offset_bottom = 550.0
+texture_normal = ExtResource("3_1bvp3")
+ignore_texture_size = true
+stretch_mode = 5
+
+[node name="Label" type="Label" parent="." unique_id=722450315]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 0.446
+anchor_bottom = 0.34100002
+offset_right = -27.791992
+offset_bottom = 0.031982422
+grow_horizontal = 2
+text = "clicks"
+label_settings = SubResource("LabelSettings_57wj1")

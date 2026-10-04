@@ -1,0 +1,13 @@
+Game Overview:
+A 2D mouse-based clicker game created in Godot using GDScript. The core mechanic revolves around clicking a door to open it.
+
+Current State:
+- The game tracks mouse clicks on the door node.
+- The counter increments with each click and updates the UI in real time.
+
+Known Issues & Bugs:
+- Display and Aspect Ratio: Depending on the window size, the viewport stretches unevenly or adds black bars, occasionally offsetting the door sprite.
+
+Planned Features & Improvements:
+- Opening Door Visuals: Change the door texture to an opened door sprite or fade out the door upon reaching a target number of clicks.
+- Win State: Display an explicit victory message when the door is opened.
